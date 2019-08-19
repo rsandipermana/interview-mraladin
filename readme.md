@@ -87,5 +87,5 @@ Example Response:
 
 ## THANKS
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT). 
-Project special for [Mister Aladin](https://www.misteraladin.com)
+Project special for [Mister Aladin](https://www.misteraladin.com).
 Project developed by  [Sandi Permana](https://permana.id)
