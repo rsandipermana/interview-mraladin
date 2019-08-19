@@ -36,6 +36,17 @@ Project created with Laravel Framework, included:
 -  Update Direct URL
 -  Delete Direct URL
 
+## GET
+
+Direct Short URL to Long URL
+-   **URL:** http://localhost:8088/:shorturl
+-   **Method:** `GET`
+
+Example URL:
+http://localhost:8088/MA-LS5NA
+You will redirect to:
+http://misteraladin.com/hotel/search?q=jakarta&m=12&d=1
+
 ## CREATE
 
 Generate Short URL
@@ -43,6 +54,19 @@ Generate Short URL
 -   **Method:** `POST`
 -   **URL Params required**
     longurl=[string]
+
+Example Response:
+
+    {
+    "message": "data successfully created",
+    "data": {
+        "shorturl": "MA-LS5NA",
+        "longurl": "http://misteraladin.com/hotel/search?q=jakarta&m=12&d=1",
+        "updated_at": "2019-08-19 17:07:12",
+        "created_at": "2019-08-19 17:07:12",
+        "id": 10
+    }
+    }
 
 ## UPDATE
 
@@ -52,6 +76,12 @@ Update Long URL
 -   **URL Params required**
 	id=[integer]
     longurl=[string]
+    
+Example Response:
+
+    {
+    "message": "data successfully updated"
+    }
 
 ## DELETE
 
@@ -59,11 +89,14 @@ Delete URL by ID
 -   **URL:** http://localhost:8088/api/direct/delete/:id
 -   **Method:** `DELETE`
     
-## GET DIRECT URL
+Example Response:
 
-Direct Short URL to Long URL
--   **URL:** http://localhost:8088/:shorturl
--   **Method:** `GET`
-  
+    {
+    "message": "data successfully deleted"
+    }
 
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT). Project developed by  [Sandi Permana](https://permana.id)
+
+## THANKS
+The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT). 
+Project special for [Mister Aladin](https://www.misteraladin.com)
+Project developed by  [Sandi Permana](https://permana.id)
