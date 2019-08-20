@@ -8,7 +8,7 @@
 
 ## About Project
 
-This project special for Mister Alaladin.
+This project special for Mister Aladin.
 Required: Docker-compose
 
 Step to install this project :
